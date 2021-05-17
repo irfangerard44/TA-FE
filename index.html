@@ -66,7 +66,7 @@
             let a = await fetch(urlapi).then(r => r.json());
             n = a.data.node.map(r => {
                 let xxx = r.an[Object.keys(r.an)];
-                return {id: xxx.id,name: xxx.name,data:{url: ""},attributes:{color: "green",text: xxx.name},data: {url: xxx.link}}
+                return {id: xxx.id,name: xxx.name,data:{url: xxx.link},attributes:{color: "green",text: xxx.name},data: {url: xxx.link}}
             });
             nn = a.data.edge.map(r =>{
                 let yyy = r.ae[Object.keys(r.ae)];
